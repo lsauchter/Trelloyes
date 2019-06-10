@@ -4,7 +4,8 @@ import List from './List.js';
 
 function App(props) {
   const list = props.store.lists.map(listItem => {
-    return <List props={listItem}></List>
+    console.log(listItem);
+    return <List props={listItem} key={listItem.id}></List>
   })
   return (
     <main className="App">
