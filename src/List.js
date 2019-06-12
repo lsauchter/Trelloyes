@@ -6,7 +6,6 @@ const List = (props) => {
     const listItems = props.props.cardIds.map(card => {
         return <Card props={card} key={props.props.id + card}></Card>;
         });
-    console.log(props);
     const { header } = props.props;
     return (
     <section className="List">
@@ -15,7 +14,7 @@ const List = (props) => {
         </header>
         <div className="List-cards">
             {listItems}
-            <button type="button" class="List-add-button">
+            <button type="button" className="List-add-button">
               + Add Random Card
             </button>
         </div>
