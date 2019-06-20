@@ -4,7 +4,7 @@ import List from './List.js';
 
 describe('List Component Test', () => {
     const STORE = {
-        props:
+        listItem:
           {
             id: '1',
             header: 'First list',
